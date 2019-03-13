@@ -1,6 +1,7 @@
 
-import users from '../___mocks___/users';
+import { getUser as getUserById } from '../services/user';
 
-export const getUser = (obj:any, args:any, context:any, info:any): any => {
-  return users.find(user => user.id === args.id);
+export const getUser = async (obj:any, args:any, context:any, info:any): Promise<any> => {
+  const user = await getUserById(args.id);
+  return user;
 }

@@ -11,6 +11,7 @@
     "start:env": "node --require dotenv/config dist/main"
   },
   "devDependencies": {
+    "@types/node": "^11.11.3",
     "@types/webpack-env": "^1.13.9",
     "clean-webpack-plugin": "^2.0.0",
     "dotenv": "^6.2.0",
@@ -23,6 +24,7 @@
   },
   "dependencies": {
     "apollo-server": "^2.4.8",
+    "aws-sdk": "^2.420.0",
     "graphql": "^14.1.1",
     "graphql-tools": "^4.0.4",
     "lodash": "^4.17.11"
